@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the Maven-built JAR file into the container
-COPY target/*.jar app.jar
+COPY build/libs/*.jar app.jar
 
 # Expose the port your app runs on
 EXPOSE 8080
