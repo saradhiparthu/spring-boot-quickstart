@@ -15,6 +15,6 @@ public class SpringBootQuickstartApplication {
 	}
 	@GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-      return String.format("Hello Pulivarthi123 %s!", name);
+      return String.format("Hello Pulivarthi %s!", name);
     }
 }
