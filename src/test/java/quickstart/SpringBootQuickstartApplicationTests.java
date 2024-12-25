@@ -1,4 +1,4 @@
-package pulivarthi.spring_boot_quickstart;
+package quickstart;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
