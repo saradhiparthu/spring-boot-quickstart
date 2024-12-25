@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s-quickstart
-          image: spring-boot-quickstart-pulivarthi:1.0 # Image that will be used to containers in the cluster
+          image: image: localhost:5000/spring-boot-quickstart-pulivarthi:latest
+# Image that will be used to containers in the cluster
           imagePullPolicy: Never
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster
