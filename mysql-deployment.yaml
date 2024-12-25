@@ -35,7 +35,7 @@ spec:
         tier: database
     spec:
       containers:
-        - image:image: localhost:5000/mysql:8.0 # image from Local Registry.
+        - image: localhost:5000/mysql:8.0 # image from Local Registry.
           args:
             - "--ignore-db-dir=lost+found" # Workaround for https://github.com/docker-library/mysql/issues/186
           name: mysql
