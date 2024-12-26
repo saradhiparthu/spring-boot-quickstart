@@ -35,10 +35,7 @@ spec:
         tier: database
     spec:
       containers:
-        - image: 127.0.0.1:5000/mysql:8.0
-          # image from Local Registry.
-          args:
-            - "--ignore-db-dir=lost+found" # Workaround for https://github.com/docker-library/mysql/issues/186
+        - image: localhost:5000/mysql:latest
           name: mysql
           env:
             - name: MYSQL_ROOT_PASSWORD
@@ -52,8 +49,6 @@ spec:
                 configMapKeyRef :
                   name : db-config
                   key :  dbName
-
-
           ports:
             - containerPort: 3306
               name: mysql
