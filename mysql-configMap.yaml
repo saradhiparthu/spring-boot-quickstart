@@ -3,5 +3,5 @@ kind : ConfigMap
 metadata:
   name : db-config
 data:
-  host : mysql
-  dbName: e-commerce
+  host : localhost
+  dbName: e_commerce

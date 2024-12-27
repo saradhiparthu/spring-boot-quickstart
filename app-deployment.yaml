@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s-quickstart
-          image: localhost:5000/spring-boot-quickstart-pulivarthi:latest
+          image: pring-boot-quickstart-pulivarthi:latest
 # Image that will be used to containers in the cluster
           imagePullPolicy: Never
           ports:
@@ -23,7 +23,7 @@ spec:
             - name: DB_HOST
               value: localhost
             - name: DB_NAME
-              value: e-commerce
+              value: e_commerce
             - name: DB_USERNAME
               value: root
             - name: DB_PASSWORD
