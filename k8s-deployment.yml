@@ -1,12 +1,12 @@
 apiVersion: apps/v1
-kind: Deployment # Kubernetes resource kind we are creating
+kind: Deployment
 metadata:
-  name: spring-boot-quickstart
+  name: spring-boot-quickstart-deployment
 spec:
   selector:
     matchLabels:
       app: spring-boot-quickstart
-  replicas: 2 # Number of replicas that will be created for this deployment
+  replicas: 2
   template:
     metadata:
       labels:
@@ -15,8 +15,6 @@ spec:
       containers:
         - name: spring-boot-quickstart
           image: localhost:5000/spring-boot-quickstart:latest
-          # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
-# The port that the container is running on in the cluster
