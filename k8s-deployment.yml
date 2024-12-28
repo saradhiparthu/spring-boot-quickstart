@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: spring-boot-quickstart
+        app: localhost:5000/spring-boot-quickstart:latest
     spec:
       containers:
         - name: spring-boot-quickstart
