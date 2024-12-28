@@ -10,11 +10,11 @@ spec:
   template:
     metadata:
       labels:
-        app: localhost:5000/spring-boot-quickstart:latest
+        app: spring-boot-quickstart
     spec:
       containers:
         - name: spring-boot-quickstart
-          image: spring-boot-quickstart:1.0
+          image: localhost:5000/spring-boot-quickstart:latest
           # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
